@@ -31,15 +31,8 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
     {
         rigidbody = GetComponent<Rigidbody>();
         pi = 3.14f;
-        var planets = GameObject.FindGameObjectsWithTag("Planet");
-        planetDatas = new PlanetData[planets.Length];
-
-        for (int i = 0; i < planets.Length; i++)
-        {
-            planetDatas[i] = new PlanetData(planets[i].transform);
-        }
-
         playerSize = Mathf.Pow(this.transform.lossyScale.x, 3);
+        Reset();
         //averageForce = 0.0f;
         //averageDirection = Vector3.zero;
     }
@@ -74,6 +67,17 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
         rigidbody.AddForce(averageForce * averageDirection.normalized, ForceMode.Force);
         */
     }
+
+    public void Reset()
+    {
+        var constellation = GameObject.FindGameObjectWithTag("Constellation").transform;
+        planetDatas = new PlanetData[constellation.childCount];
+
+        for (int i = 0; i < constellation.childCount; i++)
+        {
+            planetDatas[i] = new PlanetData(constellation.GetChild(i).transform);
+        }
+    }
     
     private void Repulsive(PlanetData _repulsion)
     {
@@ -90,6 +94,6 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
     
     private void OnCollisionEnter(Collision _collision)
     {
-        _collision.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+        //_collision.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
     }
 }
