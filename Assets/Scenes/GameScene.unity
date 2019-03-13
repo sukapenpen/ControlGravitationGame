@@ -1148,7 +1148,7 @@ Transform:
   m_GameObject: {fileID: 1998738995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 25, z: 1}
-  m_LocalScale: {x: 40, y: 80, z: 1}
+  m_LocalScale: {x: 60, y: 120, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1177,7 +1177,7 @@ GameObject:
   - component: {fileID: 2051746266}
   - component: {fileID: 2051746265}
   m_Layer: 0
-  m_Name: Planet
+  m_Name: Planet1
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

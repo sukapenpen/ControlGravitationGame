@@ -87,4 +87,9 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
         var gravity = coefficient * _repulsion.size * playerSize / distance;
         rigidbody.AddForce(-gravity * direction.normalized, ForceMode.Force);
     }
+    
+    private void OnCollisionEnter(Collision _collision)
+    {
+        _collision.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+    }
 }
