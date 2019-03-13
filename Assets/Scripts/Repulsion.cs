@@ -11,6 +11,6 @@ public class Repulsion : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("押したとき：" + transform.position);
+        
     }
 }

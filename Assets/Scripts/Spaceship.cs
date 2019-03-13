@@ -7,11 +7,13 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
     public struct PlanetData
     {
         public Vector3 pos; // { get; set; }
+        public float radius;
         public float size;
 
         public PlanetData(Transform trans)
         {
             this.pos = trans.position;
+            this.radius = trans.lossyScale.x;
             this.size = 4 * 3.14f * Mathf.Pow(trans.lossyScale.x / 2, 3) / 3;
         }
     }
@@ -59,7 +61,7 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
             rigidbody.AddForce(gravity * direction.normalized, ForceMode.Force);
         }
 
-        if (_repulsion != null)
+        if (_repulsion.gameObject.activeSelf)
         {
             var repulsion = new PlanetData(_repulsion.transform);
             Repulsive(repulsion);
@@ -77,6 +79,10 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
     {
         var direction = _repulsion.pos - transform.position;
         var distance = direction.magnitude;
+        if (distance < _repulsion.radius)
+        {
+            distance = _repulsion.radius;
+        }
         distance *= distance;
         var gravity = coefficient * _repulsion.size * playerSize / distance;
         rigidbody.AddForce(-gravity * direction.normalized, ForceMode.Force);

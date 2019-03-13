@@ -30,7 +30,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         {
             repulsion.SetActive(false);
         }
-        //Debug.Log(Input.mousePosition);
         Spaceship.Instance.OnUpdate(repulsion);
     }
 }
