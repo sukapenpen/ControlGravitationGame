@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33568931752987384}
   - component: {fileID: 23956274021192344}
   - component: {fileID: 135103187379466468}
+  - component: {fileID: 114214744306064224}
   m_Layer: 0
   m_Name: Planet4
   m_TagString: Planet
@@ -40,6 +41,7 @@ GameObject:
   - component: {fileID: 33276573665756814}
   - component: {fileID: 23828098832577486}
   - component: {fileID: 135237741258918434}
+  - component: {fileID: 114458000386223000}
   m_Layer: 0
   m_Name: Planet1
   m_TagString: Planet
@@ -58,6 +60,7 @@ GameObject:
   - component: {fileID: 33187553891671592}
   - component: {fileID: 23516488924261606}
   - component: {fileID: 135201502707407066}
+  - component: {fileID: 114985362909477848}
   m_Layer: 0
   m_Name: Planet6
   m_TagString: Planet
@@ -76,6 +79,7 @@ GameObject:
   - component: {fileID: 33874127584715428}
   - component: {fileID: 23905647675007966}
   - component: {fileID: 135049166578434086}
+  - component: {fileID: 114119757808495938}
   m_Layer: 0
   m_Name: Planet2
   m_TagString: Planet
@@ -94,6 +98,7 @@ GameObject:
   - component: {fileID: 33695781650423492}
   - component: {fileID: 23655855012609056}
   - component: {fileID: 135174246270478324}
+  - component: {fileID: 114877633195022902}
   m_Layer: 0
   m_Name: Planet5
   m_TagString: Planet
@@ -112,6 +117,7 @@ GameObject:
   - component: {fileID: 33039723165071222}
   - component: {fileID: 23268432173304134}
   - component: {fileID: 135291459367515024}
+  - component: {fileID: 114558646652729496}
   m_Layer: 0
   m_Name: Planet0
   m_TagString: Planet
@@ -130,11 +136,11 @@ GameObject:
   - component: {fileID: 114099367545450198}
   m_Layer: 0
   m_Name: GreatDipper
-  m_TagString: Untagged
+  m_TagString: Constellation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1781044735109880
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +152,7 @@ GameObject:
   - component: {fileID: 33932694786934606}
   - component: {fileID: 23095159065644756}
   - component: {fileID: 135446163397972276}
+  - component: {fileID: 114099624255550732}
   m_Layer: 0
   m_Name: Planet3
   m_TagString: Planet
@@ -567,6 +574,83 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2ed2583ab70f4ac08a7fc5b551caa93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114099624255550732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781044735109880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114119757808495938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1398228511427780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114214744306064224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335690065169210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114458000386223000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352763246613244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114558646652729496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1599503205547870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114877633195022902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431578885007656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114985362909477848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381700823642258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &135049166578434086

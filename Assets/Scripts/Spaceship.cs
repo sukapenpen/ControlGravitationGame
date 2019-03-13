@@ -27,7 +27,7 @@ public class Spaceship : SingletonMonoBehaviour<Spaceship>
     //private float averageForce;
     //private Vector3 averageDirection;
 
-    public void OnStart()
+    public void OnAwake()
     {
         rigidbody = GetComponent<Rigidbody>();
         pi = 3.14f;

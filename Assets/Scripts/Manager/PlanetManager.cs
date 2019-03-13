@@ -8,7 +8,7 @@ public class PlanetManager : SingletonMonoBehaviour<PlanetManager>
     //private GameObject[] planets;
     private bool[] planets;
     
-    private void Awake()
+    public void OnAwake()
     {
         /*
         planets = new GameObject[transform.childCount];
@@ -16,15 +16,21 @@ public class PlanetManager : SingletonMonoBehaviour<PlanetManager>
         */
         
         planets = new bool[transform.childCount];
+        
         for (int i = 0; i < planets.Length; i++)
         {
             planets[i] = false;
         }
     }
 
-    private void Update()
+    public void OnUpdate()
     {
-        
+            
+    }
+
+    public bool JudgeStageClear()
+    {
+        return planets[planets.Length - 1];
     }
 
     public bool CheckTouchOrder(int _planetNum)

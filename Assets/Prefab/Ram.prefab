@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33238224414303634}
   - component: {fileID: 23532435764279540}
   - component: {fileID: 135662702408249118}
+  - component: {fileID: 114572266202157360}
   m_Layer: 0
   m_Name: Planet1
   m_TagString: Planet
@@ -40,11 +41,11 @@ GameObject:
   - component: {fileID: 114372077101783002}
   m_Layer: 0
   m_Name: Ram
-  m_TagString: Untagged
+  m_TagString: Constellation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1400783997139418
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,6 +57,7 @@ GameObject:
   - component: {fileID: 33483772299630902}
   - component: {fileID: 23225565281455426}
   - component: {fileID: 135800331357638002}
+  - component: {fileID: 114509997985293278}
   m_Layer: 0
   m_Name: Planet2
   m_TagString: Planet
@@ -74,6 +76,7 @@ GameObject:
   - component: {fileID: 33188826591269030}
   - component: {fileID: 23133796835874950}
   - component: {fileID: 135626497950784944}
+  - component: {fileID: 114608978158075848}
   m_Layer: 0
   m_Name: Planet0
   m_TagString: Planet
@@ -271,6 +274,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2ed2583ab70f4ac08a7fc5b551caa93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114509997985293278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1400783997139418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114572266202157360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1254533509901002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114608978158075848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1464745491784644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51ff5eed6b54d30b94f8562fbeb992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &135626497950784944

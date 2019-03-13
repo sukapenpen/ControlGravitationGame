@@ -3,45 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ConstellationManager : SingletonMonoBehaviour<ConstellationManager>
-{
-    public enum ConstellationStatus
-    {
-        GreatDipper,
-        Ram
-    }
-    
+{   
     [SerializeField]
     private GameObject[] constellations;
-    private ConstellationStatus constellationStatus;
     private GameObject[] planets;
 
     
-    private void Awake()
+    public void OnAwake()
     {
-        for (int i = 0; i < constellations.Length; i++)
-        {
-            constellations[i] = Instantiate(constellations[i]);
-            constellations[i].SetActive(false);
-        }
-        constellationStatus = ConstellationStatus.GreatDipper;
+        var rand = Random.Range(0, constellations.Length);
+        Instantiate(constellations[rand]);
     }
 
     private void Update()
     {
-        switch (constellationStatus)
-        {
-            case ConstellationStatus.GreatDipper:
-                Debug.Log("北斗七星のステージ");
-                constellations[0].SetActive(true);
-                break;
-            
-            case ConstellationStatus.Ram:
-                Debug.Log("牡羊座のステージ");
-                break;
-        }
         
     }
 
+    private void Init()
+    {
+        var rand = Random.Range(0, constellations.Length);
+        Instantiate(constellations[rand]);
+        /*
+        var constellation = constellations[rand].transform;
+        planets = new GameObject[constellation.childCount];
+        for (int i = 0; i < constellation.childCount; i++)
+        {
+            planets[i] = constellation.GetChild(i).gameObject;
+        }
+        */
+    }
+
+    /*
     private void Init()
     {
         //状態にあった星たちを取得
@@ -60,11 +53,7 @@ public class ConstellationManager : SingletonMonoBehaviour<ConstellationManager>
         }
         
     }
-
-    public void ChangeConstellation()
-    {
-        constellationStatus += 1;
-    }
+    */
 
     /*
     public GameObject[] Constellations()
